@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <style>
+        body{
+            background-color: rgb(159, 96, 217);
+        }
+        .grid{
+            display: grid;
+            place-items: center;
+            height:97vh;
+            overflow: clip;
+        }
+        #circle{
+            background-color: rgb(227, 170, 170);
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid rgb(86, 54, 12);
+            width: 100px;
+            transform: translate(-50%,-50%);
+            transition: .01s;
+            position: absolute;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+    <div id="circle"></div>
+    </div>
+    <script src="cursor.js"></script>
+</body>
+</html>
+
+
